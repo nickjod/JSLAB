@@ -112,5 +112,22 @@
             <button type="button" id="processBtn">Process Data</button>
         </form>
     </div>
+    <script>
+    document.getElementById("processBtn").addEventListener("click", function () {
+
+        // Task 1: Variables
+        var studentName = document.getElementById("studentName").value;
+        var age = document.getElementById("studentAge").value;
+        var isEnrolled = document.getElementById("isEnrolled").checked;
+
+        // String concatenation using +
+        var sentence = "Student Name is " + studentName +
+                       ", Age is " + age +
+                       ", Enrolled status is " + isEnrolled;
+
+        // Display the sentence
+        alert(sentence);
+    });
+</script>
 </body>
 </html>
