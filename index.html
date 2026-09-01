@@ -112,7 +112,7 @@
             <button type="button" id="processBtn">Process Data</button>
         </form>
     </div>
-    <script>
+    <<script>
     document.getElementById("processBtn").addEventListener("click", function () {
 
         // Task 1: Variables and String Concatenation
@@ -136,8 +136,15 @@
         alert("Result of division: " + result);
 
 
+        // Task 3: Testing NaN
+        var wordValue = document.getElementById("wordValue").value;
+
+        // Attempt mathematical division using text
+        var nanResult = wordValue / 2;
+
+        // Display the result
+        alert("Result of text division: " + nanResult);
     });
 </script>
-
 </body>
 </html>
