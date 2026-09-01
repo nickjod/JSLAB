@@ -115,19 +115,29 @@
     <script>
     document.getElementById("processBtn").addEventListener("click", function () {
 
-        // Task 1: Variables
+        // Task 1: Variables and String Concatenation
         var studentName = document.getElementById("studentName").value;
         var age = document.getElementById("studentAge").value;
         var isEnrolled = document.getElementById("isEnrolled").checked;
 
-        // String concatenation using +
         var sentence = "Student Name is " + studentName +
                        ", Age is " + age +
                        ", Enrolled status is " + isEnrolled;
 
-        // Display the sentence
         alert(sentence);
+
+
+        // Task 2: Testing Infinity
+        var valueA = Number(document.getElementById("numA").value);
+        var valueB = Number(document.getElementById("numB").value);
+
+        var result = valueA / valueB;
+
+        alert("Result of division: " + result);
+
+
     });
 </script>
+
 </body>
 </html>
