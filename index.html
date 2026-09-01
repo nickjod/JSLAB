@@ -112,7 +112,7 @@
             <button type="button" id="processBtn">Process Data</button>
         </form>
     </div>
-    <<script>
+    <script>
     document.getElementById("processBtn").addEventListener("click", function () {
 
         // Task 1: Variables and String Concatenation
@@ -139,11 +139,17 @@
         // Task 3: Testing NaN
         var wordValue = document.getElementById("wordValue").value;
 
-        // Attempt mathematical division using text
         var nanResult = wordValue / 2;
 
-        // Display the result
         alert("Result of text division: " + nanResult);
+
+
+        // Task 4: Scientific Notation
+        var largeNumber = 4.25e+6;
+        var smallNumber = 4.25e-6;
+
+
+       
     });
 </script>
 </body>
